@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Sidebar from './components/molecules/Sidebar.js'
+import './App.css'
 
-function App() {
+
+const App = () => {
+  const usuario = 'Fernando';
+  const rol = 'Admin';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar usuario = {usuario} rol={rol}/>
+      <div className="content">
+        {/* Contenido principal de la aplicación */}
+        <h1>Contenido Principal</h1>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,62 @@
+/* Sidebar.css */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #202020;
+  padding-top: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 70%; /* Ajusta el tamaño máximo del logo */
+  margin-bottom: 10px; /* Añade un margen inferior al logo si es necesario */
+}
+.user-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.user-role {
+  font-size: 0.8em;
+  color: #888;
+  margin-bottom: 0;
+}
+
+.nav {
+  margin-bottom: 150px !important;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: #333; /* Cambia el color de fondo al pasar el cursor */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+.sidebar a:active,
+.sidebar a.active {
+  background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+.logout-button {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.logout-button:hover {
+  background-color: transparent !important;
+}
