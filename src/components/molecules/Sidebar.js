@@ -1,5 +1,5 @@
 // Sidebar.js
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Nav, NavLink, Button } from 'reactstrap'
 import './Sidebar.css'
 import logo from './assets/Logo.png'
