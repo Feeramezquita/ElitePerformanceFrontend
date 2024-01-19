@@ -1,18 +1,11 @@
 import React from 'react'
-import Sidebar from './components/molecules/Sidebar.js'
+import AppRouter from './AppRouter'
 import './App.css'
 
-
-const App = () => {
-  const usuario = 'Fernando';
-  const rol = 'Admin';
+function App() {
   return (
-    <div className="App">
-      <Sidebar usuario = {usuario} rol={rol}/>
-      <div className="content">
-        {/* Contenido principal de la aplicación */}
-        <h1>Contenido Principal</h1>
-      </div>
+    <div>
+      <AppRouter />
     </div>
   )
 }

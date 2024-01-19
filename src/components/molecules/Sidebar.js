@@ -1,8 +1,10 @@
 // Sidebar.js
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Nav, NavLink, Button } from 'reactstrap'
 import './Sidebar.css'
 import logo from './assets/Logo.png'
+
 
 const Sidebar = ({ usuario, rol }) => {
   return (
@@ -13,27 +15,27 @@ const Sidebar = ({ usuario, rol }) => {
         <p className="user-role">{rol}</p>
       </div>
       <Nav vertical>
-        <NavLink to="/" activeClassName="active">
+        <Link to="/Home" className="nav-link" activeClassName="active">
           Inicio
-        </NavLink>
-        <NavLink to="/" activeClassName="active">
+        </Link>
+        <Link to="/Empleados" className="nav-link" activeClassName="active">
           Empleados
-        </NavLink>
-        <NavLink to="/" activeClassName="active">
+        </Link>
+        <NavLink to="/Clientes" activeClassName="active">
           Clientes
         </NavLink>
-        <NavLink to="/" activeClassName="active">
+        <Link to="/Autos" className="nav-link" activeClassName="active">
           Autos
-        </NavLink>
-        <NavLink to="/" activeClassName="active">
+        </Link>
+        <Link to="/Servicios" className="nav-link" activeClassName="active">
           Servicios
-        </NavLink>
-        <NavLink to="/" activeClassName="active">
+        </Link>
+        <Link to="/Llantas" className="nav-link" activeClassName="active">
           Llantas
-        </NavLink>
-        <NavLink to="/" activeClassName="active">
-          Orden Servicio
-        </NavLink>
+        </Link>
+        <Link to="/OrdenServicio" className="nav-link" activeClassName="active">
+          Orden Serivicio
+        </Link>
       </Nav>
       <div>
         <Button className="logout-button btn-link">Cerrar Sesión</Button>
